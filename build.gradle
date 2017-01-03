@@ -14,7 +14,8 @@ asciidoctorj {
 asciidoctor {
     backends = ['html5']
     requires = ['asciidoctor-diagram']
-    attributes 'source-highlighter' : 'coderay',
+    attributes = ['source-highlighter' : 'coderay',
                 'toc'                 : 'right',
                 'toc-title'           : '目次',
+                'icons': 'font']
 }

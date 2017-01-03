@@ -1,0 +1,34 @@
+= Asciidoc with Gradle Example
+
+Gradleを利用したAsciidocのサンプルです。次の記述例があります。
+
+. 見出し
+. 順序付きリスト
+. 順序なしリスト
+. テーブル
+. 画像
+. サムネイル化した画像
+. plantumlによるプレーンテキストから図の生成
+
+build.gradleの記述では次がデフォルトとは異なります。
+
+. 目次の出力
+. 目次自体の名称変更
+. plantumlを利用するように依存関係を追加
+. asciidoctorj のバージョンを指定
+
+
+== このサンプルを動作させる手順
+
+. JVM 7 以上をインストールします。
+. このリポジトリをcloneもしくはダウンロードします。
+----
+git clone https://github.com/kyonmm/asciidoctor-gradle-example.git
+----
+[start=3]
+. AsciidocをHTMLにビルドします。
+----
+cd asciidoctor-gradle-example
+./gradlew asciidoctor
+----
+. ビルド結果のHTMLを確認します。 `build/asciidoc/html5` 配下にHTMLがあります。

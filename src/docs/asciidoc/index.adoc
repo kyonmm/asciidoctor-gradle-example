@@ -2,8 +2,16 @@
 :Author: kyon_mm
 :Email: kyon.mm@gmail.com
 :numbered:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
 Asciidocのサンプルです。
+
 
 == 画像のいれかた
 image:images/screenshot.png[]
@@ -76,3 +84,35 @@ enum TimeUnit {
 
 annotation SuppressWarnings
 --
+
+
+
+== 注釈のいれかた
+
+[NOTE]
+====
+noteです
+====
+
+[TIP]
+====
+tipです
+====
+
+
+[IMPORTANT]
+====
+importantです
+====
+
+
+[CAUTION]
+====
+cautionです
+====
+
+
+[WARNING]
+====
+warningです
+====
