@@ -21,6 +21,7 @@ build.gradleの記述では次がデフォルトとは異なります。
 == このサンプルを動作させる手順
 
 . JVM 7 以上をインストールします。
+. Graphvizをインストールします。
 . このリポジトリをcloneもしくはダウンロードします。
 ----
 git clone https://github.com/kyonmm/asciidoctor-gradle-example.git
