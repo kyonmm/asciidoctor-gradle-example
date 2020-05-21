@@ -1,19 +1,16 @@
 plugins {
-  id "org.asciidoctor.convert" version "1.5.6"
-  id "com.github.jruby-gradle.base" version "1.5.0"
+  id "org.asciidoctor.jvm.convert" version "3.1.0"
+}
+repositories {
+    jcenter()
+    // ruby.gems()
 }
 
-dependencies {
-    asciidoctor 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.6'
-    asciidoctor 'org.asciidoctor:asciidoctorj-diagram:1.5.4.1'
-}
 asciidoctorj {
-    version = '1.5.4'
-}
-
-asciidoctor {
-    backends = ['html5']
-    requires = ['asciidoctor-diagram']
+    modules {
+       diagram.use()
+       diagram.version '1.5.16'
+    }
     attributes = ['source-highlighter' : 'coderay',
                 'toc'                 : 'right',
                 'toc-title'           : '目次',
